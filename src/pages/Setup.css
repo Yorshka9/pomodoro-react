@@ -1,0 +1,31 @@
+body {
+  background-color: #282c34;
+}
+
+.link-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.reset-button-container {
+  padding-top: 30px;
+}
+
+.reset-button {
+  font-size: 18px;
+}
+
+.setup-header {
+  padding-bottom: 20px;
+  font-size: 35px;
+}
+
+.session-label,
+.session-length {
+  font-size: 23px;
+}
+
+.break-label,
+.break-length {
+  font-size: 23px;
+}

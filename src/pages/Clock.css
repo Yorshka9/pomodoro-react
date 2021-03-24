@@ -1,0 +1,30 @@
+body {
+  background-color: #282c34;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+p {
+  color: #8a8787;
+}
+
+.Header {
+  color: #dad8db;
+}
+
+.start-stop-button {
+  font-size: 22px;
+}
+
+#timer-label {
+  margin: 0;
+}
+
+.session-counter {
+  font-size: 22px;
+}
+
+.session-counter-button {
+}

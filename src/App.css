@@ -1,0 +1,148 @@
+.App {
+  text-align: center;
+  padding: 0px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: #dad8db;
+}
+
+p {
+  color: white;
+}
+
+.App-link {
+  color: #dad8db;
+  text-decoration: none;
+  font-size: 30px;
+  border-right: 2px solid;
+  border-left: 2px solid;
+  border-top: 2px hidden;
+  border-bottom: 2px hidden;
+  padding: 2px;
+}
+
+.App-link:hover {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  margin: -2px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Quantico", sans-serif;
+}
+
+.heading {
+  color: #36454f;
+  font-size: 3em;
+}
+
+.container {
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #282c34;
+  position: relative;
+  animation: sky 10s ease-in infinite normal;
+  margin: 10px;
+}
+
+.sun {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: radial-gradient(#ffffff);
+  animation: glow 10s ease-in infinite normal;
+}
+
+.sun::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  z-index: 3;
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  left: 250px;
+}
+
+@keyframes glow {
+  48% {
+    box-shadow: 0 0 50px 5px #ffffff;
+  }
+
+  50% {
+    box-shadow: 0 0 50px 5px #ffffff;
+  }
+
+  52% {
+    box-shadow: 0 0 50px 5px #ffffff;
+  }
+}
+
+/* MODAL */
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 30%;
+  width: 20%;
+  overflow-y: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  z-index: 101;
+  padding: 40px;
+}
+
+.timer-text {
+  font-size: 30px;
+  color: #dad8db;
+}
+
+.settings-button {
+  font-size: 22px;
+}
